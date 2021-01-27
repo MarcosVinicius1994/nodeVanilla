@@ -1,7 +1,3 @@
-// import axios from 'axios';
-
-const baseURL  = axios .create({
-    baseURL: 'https://webhook.site/01b539bb-aa5a-4f41-8386-76f1482aaab8'
-})
+const baseURL = 'https://accenture-java-desafio.herokuapp.com/'
 
 export default baseURL;
