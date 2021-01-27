@@ -1,0 +1,40 @@
+#container{
+    margin-top: 120px;
+    text-align: center;
+    display: flex;
+    /* margin-left:150px; */
+}
+
+.card{
+    margin-top: 170px;
+    text-align: center;
+    display: flex;
+    margin-left: 150px;
+    background: url('../img/js.png');
+
+}
+
+
+.content-header{
+    text-align: center;
+    }
+    .content-default{
+        padding: 20px;
+    }
+    .content-flex{
+        display: flex;
+    
+    }
+    .content-flexgrid{
+        display: grid;
+    }
+    .content-flex--direction{
+        flex-direction:row;
+    }
+    .flex-wrap{
+        flex: 1;
+        margin: 2px;
+        width: 33%;
+        justify-content: center;
+        border-style: groove;
+    }
