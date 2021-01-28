@@ -53,7 +53,6 @@ let Login = {
               alert('Quantidade de caracteres inferior ao permitido')
           }
       })
-
   }
 }
 
