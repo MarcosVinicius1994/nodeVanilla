@@ -18,9 +18,6 @@ let Sign = {
           <label for="inputRemenberPassword" class="sr-only">Remember Password</label>
           <input type="password" id="re_password" class="form-control" placeholder="re_password" required="">
           <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
           </div>
           <button class="btn btn-lg btn-primary btn-block" id ="submit_new_register"type="submit">Sign in</button>
         </form>
@@ -46,7 +43,8 @@ let Sign = {
                   login: userMail,
                   nome: nameVal,
                   senha: passwordVal
-              }, {
+              },
+               {
                   headers: {
                       'Content-Type': 'application/json'
                   }

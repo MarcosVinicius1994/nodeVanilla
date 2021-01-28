@@ -22,7 +22,7 @@ let Nav = {
           </li>
           <li class="nav-item">
 
-            <a class="navbar-brand" href="/#/sign" style="color: black;" type="button">Criar uma conta
+            <a class="navbar-brand" href="/#/signup" style="color: black;" type="button">Criar uma conta
               <span class="fas fa-user-plus px-2"></span>
             </a>
 

@@ -1,7 +1,9 @@
 import baseURL from '../../service/baseURL.js'
+import IsAuthenticated from '../../service/isAuth.js'
 
 let Login = {
-    render: async () => {
+    render : async () => {
+        let IsAuth = await IsAuthenticated(localStorage.getItem('@token'), 'dashboard');
         let view = `
         <div class="container">   
         <body class="text-center">
@@ -18,7 +20,7 @@ let Login = {
           </div>
           <button class="btn btn-lg btn-primary btn-block" id="login_start" type="submit">Login</button>
         </form>
-         </body>        
+         </body>       
         </div>
         `
         return view
@@ -36,11 +38,10 @@ let Login = {
                   senha: userPass,
               })
               .then( res => {
-
-
                       if ( res.status === 200 ){
                           window.location.replace('#/dashboard')
-                          localStorage.setItem('userDataAccount', JSON.stringify(res.data))
+                          localStorage.setItem('@token',res.data.token)
+                        //   localStorage.setItem('userDataAccount', JSON.stringify(res.data))
                       } 
                   
               }).catch((err) => {

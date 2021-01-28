@@ -17,9 +17,9 @@ import Utils from './service/Utils.js'
 
 let routes = {
     '/': Home,
-    '/sign': Sign,
+    '/signup': Sign,
     '/login': Login,
-    '/dash': Dash
+    '/dashboard': Dash
 }
 
 
